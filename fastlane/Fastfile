@@ -61,6 +61,11 @@ platform :ios do
     gym
   end
 
+  desc "Upload to App Store"
+  lane :upload do
+    deliver
+  end
+  
   error do |lane, exception|
   # This block is called if there was an error running a lane.
   end
