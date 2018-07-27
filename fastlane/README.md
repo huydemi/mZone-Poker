@@ -26,6 +26,11 @@ Creating a code signing certificate and provisioning profile
 fastlane ios screenshot
 ```
 Take screenshots
+### ios build
+```
+fastlane ios build
+```
+Create ipa
 
 ----
 
