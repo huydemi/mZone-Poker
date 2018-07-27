@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		048F74E31DDF910E006E1D10 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 048F74E21DDF910E006E1D10 /* Assets.xcassets */; };
+		6B5B4473210B7C6E00BE705B /* mZone_PokerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B5B4472210B7C6E00BE705B /* mZone_PokerUITests.swift */; };
+		6B5B447B210B7CDE00BE705B /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B5B447A210B7CDE00BE705B /* SnapshotHelper.swift */; };
 		EC9527461B8043450098D609 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9527451B8043450098D609 /* AppDelegate.swift */; };
 		EC9527481B8043450098D609 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9527471B8043450098D609 /* ViewController.swift */; };
 		EC95274B1B8043450098D609 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC9527491B8043450098D609 /* Main.storyboard */; };
@@ -15,11 +17,25 @@
 		EC95275B1B804DC50098D609 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = EC95275D1B804DC50098D609 /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		6B5B4475210B7C6E00BE705B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EC95273A1B8043450098D609 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EC9527411B8043450098D609;
+			remoteInfo = "mZone Poker";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		041A98171DCEF4B100F96C9E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
 		041A98181DCEF4BA00F96C9E /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Main.strings; sourceTree = "<group>"; };
 		048F74E21DDF910E006E1D10 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		42584AB61DF57ADE0003B086 /* mZone Poker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "mZone Poker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B5B4470210B7C6E00BE705B /* mZone PokerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "mZone PokerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B5B4472210B7C6E00BE705B /* mZone_PokerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mZone_PokerUITests.swift; sourceTree = "<group>"; };
+		6B5B4474210B7C6E00BE705B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6B5B447A210B7CDE00BE705B /* SnapshotHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SnapshotHelper.swift; path = fastlane/SnapshotHelper.swift; sourceTree = SOURCE_ROOT; };
 		EC9527451B8043450098D609 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EC9527471B8043450098D609 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		EC95274A1B8043450098D609 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -30,6 +46,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		6B5B446D210B7C6E00BE705B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		EC95273F1B8043450098D609 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -40,11 +63,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6B5B4471210B7C6E00BE705B /* mZone PokerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				6B5B447A210B7CDE00BE705B /* SnapshotHelper.swift */,
+				6B5B4472210B7C6E00BE705B /* mZone_PokerUITests.swift */,
+				6B5B4474210B7C6E00BE705B /* Info.plist */,
+			);
+			path = "mZone PokerUITests";
+			sourceTree = "<group>";
+		};
 		EC9527391B8043450098D609 = {
 			isa = PBXGroup;
 			children = (
 				EC9527441B8043450098D609 /* mZone Poker */,
 				42584AB61DF57ADE0003B086 /* mZone Poker.app */,
+				6B5B4470210B7C6E00BE705B /* mZone PokerUITests.xctest */,
+				6B5B4471210B7C6E00BE705B /* mZone PokerUITests */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -67,6 +102,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		6B5B446F210B7C6E00BE705B /* mZone PokerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6B5B4477210B7C6E00BE705B /* Build configuration list for PBXNativeTarget "mZone PokerUITests" */;
+			buildPhases = (
+				6B5B446C210B7C6E00BE705B /* Sources */,
+				6B5B446D210B7C6E00BE705B /* Frameworks */,
+				6B5B446E210B7C6E00BE705B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6B5B4476210B7C6E00BE705B /* PBXTargetDependency */,
+			);
+			name = "mZone PokerUITests";
+			productName = "mZone PokerUITests";
+			productReference = 6B5B4470210B7C6E00BE705B /* mZone PokerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		EC9527411B8043450098D609 /* mZone Poker */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = EC9527541B8043450098D609 /* Build configuration list for PBXNativeTarget "mZone Poker" */;
@@ -90,10 +143,15 @@
 		EC95273A1B8043450098D609 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0810;
+				LastSwiftUpdateCheck = 0940;
 				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = "";
 				TargetAttributes = {
+					6B5B446F210B7C6E00BE705B = {
+						CreatedOnToolsVersion = 9.4.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = EC9527411B8043450098D609;
+					};
 					EC9527411B8043450098D609 = {
 						CreatedOnToolsVersion = 7.0;
 						DevelopmentTeam = AA388QFS75;
@@ -117,11 +175,19 @@
 			projectRoot = "";
 			targets = (
 				EC9527411B8043450098D609 /* mZone Poker */,
+				6B5B446F210B7C6E00BE705B /* mZone PokerUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		6B5B446E210B7C6E00BE705B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		EC9527401B8043450098D609 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -136,6 +202,15 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		6B5B446C210B7C6E00BE705B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B5B4473210B7C6E00BE705B /* mZone_PokerUITests.swift in Sources */,
+				6B5B447B210B7CDE00BE705B /* SnapshotHelper.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		EC95273E1B8043450098D609 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -146,6 +221,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6B5B4476210B7C6E00BE705B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EC9527411B8043450098D609 /* mZone Poker */;
+			targetProxy = 6B5B4475210B7C6E00BE705B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		EC9527491B8043450098D609 /* Main.storyboard */ = {
@@ -178,6 +261,71 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		6B5B4478210B7C6E00BE705B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = "mZone PokerUITests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.huydang.mZone-PokerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "59959747-94bc-482d-b1eb-77a9a8716ab0";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "mZone Poker";
+			};
+			name = Debug;
+		};
+		6B5B4479210B7C6E00BE705B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = "mZone PokerUITests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.huydang.mZone-PokerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "59959747-94bc-482d-b1eb-77a9a8716ab0";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "mZone Poker";
+			};
+			name = Release;
+		};
 		EC9527521B8043450098D609 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -312,6 +460,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		6B5B4477210B7C6E00BE705B /* Build configuration list for PBXNativeTarget "mZone PokerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6B5B4478210B7C6E00BE705B /* Debug */,
+				6B5B4479210B7C6E00BE705B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		EC95273D1B8043450098D609 /* Build configuration list for PBXProject "mZone Poker" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

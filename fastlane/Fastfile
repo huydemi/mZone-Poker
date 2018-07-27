@@ -50,6 +50,11 @@ platform :ios do
     sigh(force: true)
   end
 
+  desc "Take screenshots"
+  lane :screenshot do
+    snapshot
+  end
+  
   error do |lane, exception|
   # This block is called if there was an error running a lane.
   end

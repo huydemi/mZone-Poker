@@ -21,6 +21,11 @@ or alternatively using `brew cask install fastlane`
 fastlane ios provision
 ```
 Creating a code signing certificate and provisioning profile
+### ios screenshot
+```
+fastlane ios screenshot
+```
+Take screenshots
 
 ----
 
