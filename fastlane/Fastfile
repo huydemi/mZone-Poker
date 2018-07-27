@@ -66,6 +66,14 @@ platform :ios do
     deliver
   end
   
+  desc "Provision, take screenshots, build and upload to App Store"
+  lane :do_everything do
+    provision
+    screenshot
+    build
+    upload
+  end
+
   error do |lane, exception|
   # This block is called if there was an error running a lane.
   end
