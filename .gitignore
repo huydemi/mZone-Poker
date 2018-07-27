@@ -48,6 +48,6 @@ playground.xcworkspace
 Pods/
 
 # Fastlane
-fastlane/Fastfile
-fastlane/report.xml
+# fastlane/Fastfile
+# fastlane/report.xml
 
